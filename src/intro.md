@@ -5,3 +5,6 @@ This cookbook is a collection of simple examples that give you a good starting p
 {{#include text_processing.md}}
 {{#include operating_system.md}}
 {{#include files.md}}
+{{#include network_services.md}}
+
+[comment]: <> (a reference style link.) 

@@ -2,6 +2,8 @@
 
 Write a three-line message to a file, then reads the entire file content into a variable.
 
+### Rust
+
 ```rust,edition2021,no_run
 use std::fs::File;
 

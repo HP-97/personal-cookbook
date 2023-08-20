@@ -6,16 +6,14 @@ Fetches the environment variable `key` from the current process
 
 Source: https://doc.rust-lang.org/std/env/fn.var_os.html
 
-```rust,edition2021,no_run
+```rust,edition2021
 use std::env;
 
-fn main() {
-    let key = "HOME";
+let key = "HOME";
 
-    match env::var(key) {
-        Ok(val) => println!("{key}": {val:?}"),
-        Err(e) => println!("couldn't interpret {key}: {e}"),
-    }
+match env::var(key) {
+    Ok(val) => println!("{key}: {val:?}"),
+    Err(e) => println!("couldn't interpret {key}: {e}")
 }
 ```
 
