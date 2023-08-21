@@ -4,7 +4,7 @@ _Assume you are using the language's corresponding LDAP instantiation code from 
 
 ### Rust
 
-```rust,edition2021,no_run
+```rust,edition2021,ignore
 use anyhow::Result;
 use serde::{Deserialize, Serialize};
 
@@ -65,7 +65,7 @@ If your code retrieves value from a hashmap often, there is a fairly likely chan
 
 Here is a way you can define the LDAP attributes within an enum for reuse
 
-```rust,edition2021,no_run
+```rust,edition2021,ignore
 use strum::IntoEnumIterator;
 use strum_macros::{Display, EnumIter, EnumString};
 

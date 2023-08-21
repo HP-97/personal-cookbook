@@ -9,11 +9,13 @@ Source: https://doc.rust-lang.org/std/env/fn.var_os.html
 ```rust,edition2021
 use std::env;
 
-let key = "HOME";
+fn main() {
+    let key = "HOME";
 
-match env::var(key) {
-    Ok(val) => println!("{key}: {val:?}"),
-    Err(e) => println!("couldn't interpret {key}: {e}")
+    match env::var(key) {
+        Ok(val) => println!("{key}: {val:?}"),
+        Err(e) => println!("couldn't interpret {key}: {e}")
+    }
 }
 ```
 

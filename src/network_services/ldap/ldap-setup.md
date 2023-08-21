@@ -5,7 +5,7 @@ Instantiate a LDAP connection
 ### Rust
 
 NOTE: This example creates an asynchronous connection to a LDAP server
-```rust,edition2021,no_run
+```rust,edition2021,ignore
 use anyhow::Result;
 use ldap3::{Ldap, LdapConnAsync, Scope, SearchEntry};
 

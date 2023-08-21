@@ -2,7 +2,7 @@
 
 
 Source: https://github.com/tokio-rs/axum
-```rust,edition2021
+```rust,edition2021,ignore
 use axum::{
     routing::{get, post},
     http::StatusCode,

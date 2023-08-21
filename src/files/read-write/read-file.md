@@ -5,10 +5,12 @@ Write a three-line message to a file, then reads the entire file content into a 
 ### Rust
 
 ```rust,edition2021,no_run
+use anyhow::Result;
 use std::fs::File;
+use std::io::prelude::*;
 
-fn main() -> Result<(), Error> {
-    let path = "lines.txt"
+fn main() -> Result<()> {
+    let path = "lines.txt";
 
     let mut file = File::create(path)?;
     file.write_all(b"Hello world!")?;

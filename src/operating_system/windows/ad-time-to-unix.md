@@ -6,7 +6,6 @@ To convert AD date/time into UNIX time, we will need to convert the time from 10
 
 ```rust,edition2021
 use anyhow::Result;
-
 pub fn convert_windows_to_unix_time(windows_time: usize) -> Result<usize> {
     let time_diff = (windows_time / 10000000) - 11644473600;
 
@@ -17,6 +16,8 @@ pub fn convert_windows_to_unix_time(windows_time: usize) -> Result<usize> {
     }
 }
 
-assert_eq!(convert_windows_to_unix_time(133369301920000000).unwrap(), 1692456592);
+fn main() {
+    assert_eq!(convert_windows_to_unix_time(133369301920000000).unwrap(), 1692456592);
+}
 
 ```

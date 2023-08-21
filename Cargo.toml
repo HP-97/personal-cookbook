@@ -1,0 +1,18 @@
+[package]
+name = "personal-cookbook-deps"
+version = "0.1.0"
+edition = "2021"
+publish = false
+build = "build.rs"
+
+[dependencies]
+anyhow = "1.0.75"
+walkdir = "2.3.3"
+
+[build-dependencies]
+skeptic = "0.13"
+walkdir = "2.3.3"
+
+[dev-dependencies]
+skeptic = "0.13"
+walkdir = "2.3.3"
