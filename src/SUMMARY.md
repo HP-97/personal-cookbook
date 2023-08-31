@@ -1,7 +1,7 @@
 # Summary
 
 [Table of Contents](intro.md)
-- [Date and Time](date_and_time.md)
+- [Date and Time](datetime.md)
 - [Network Services](network_services.md)
     - [Working with LDAP](network_services/ldap.md)
 - [Operating System](operating_system.md)
